@@ -1,0 +1,18 @@
+// very beginner friendly project
+
+// My current age
+const myAge = 27;
+// Early Years begin with (let) because it will be changing
+let earlyYears = 2;
+earlyYears *= 10.5;
+// same with laterYears, it will be changing just like earlyYears
+let laterYears = myAge - 2;
+// Multiply the laterYears variable by 4 to calculate the number of dog years
+laterYears *= 4;
+console.log(earlyYears);
+console.log(laterYears);
+// Add earlyYears and laterYears together and store in a new variable
+let myAgeInDogYears = earlyYears + laterYears;
+let myName = "Josue".toLowerCase();
+// `< this symbol is usually by the esc key, I always forget
+console.log(`my name is ${myName} I am ${myAgeInDogYears} years old in dog year`);
