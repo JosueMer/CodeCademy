@@ -1,0 +1,41 @@
+import java.util.ArrayList;
+
+class Playlist {
+  
+  public static void main(String[] args) {
+
+    ArrayList<String> desertIslandPlaylist = new ArrayList<String>();
+    desertIslandPlaylist.add("Bad Bunny - Neverita");
+    desertIslandPlaylist.add("John Summit - Youve Done Enough Remix");
+    desertIslandPlaylist.add("John Summit - La Danza");
+    desertIslandPlaylist.add("Dom Dolla - Strangers");
+    desertIslandPlaylist.add("Rufus Du Sol - Innerbloom");
+    desertIslandPlaylist.add("Drake - Passionfruit");
+    desertIslandPlaylist.add("Drake - Nonstop");
+    desertIslandPlaylist.add("Twenty One Pilots - The Judge");
+    desertIslandPlaylist.add("Cloonee - Sun Goes Down");
+    desertIslandPlaylist.add("i_O - Every song he made - Rip 444ever");
+
+  // Remove 5 songs because we can only bring 5 now
+
+    desertIslandPlaylist.remove("Dom Dolla - Strangers");
+    desertIslandPlaylist.remove("John Summit - La Danza");
+    desertIslandPlaylist.remove("Rufus Du Sol - Innerbloom");
+    desertIslandPlaylist.remove("Drake - Nonstop");
+    desertIslandPlaylist.remove("Cloonee - Sun Goes Down");
+
+ // Get the indices of the songs you want to swap.
+ int indexA = desertIslandPlaylist.indexOf("John Summit - Youve Done Enough Remix");
+ int indexB = desertIslandPlaylist.indexOf ("Drake - Passionfruit");
+ // Create a temporary variable to store the value of song a. (We’ll call the songs a and b here.)
+ String tempA = ("John Summit - Youve Done Enough Remix");
+ // Rewrite the value at the index of a to the value of b.
+ desertIslandPlaylist.set(indexA, "Drake - Passionfruit");
+ // Rewrite the value at the index of b to the value of the temporary variable.
+desertIslandPlaylist.set(indexB, "John Summit - Youve Done Enough Remix");
+
+    System.out.println(desertIslandPlaylist);
+    System.out.println(desertIslandPlaylist.size());
+  }
+  
+}
